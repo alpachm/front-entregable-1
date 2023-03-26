@@ -1,0 +1,46 @@
+.home-page{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(rgb(0 0 0 / .6), rgb(0 0 0 / .6)), url(../../assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.container-homePage{
+    display: grid;
+    gap:1rem;
+    text-align: center;
+
+    background: rgb(255 255 255 / .7);
+    width: 80%;
+    max-width: 800px;
+    margin:auto;
+    padding:3rem 0;
+}
+
+.container-homePage h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+.container-homePage form{
+    width: 80%;
+    max-width: 500px;
+    margin:auto;
+}
+
+.container-homePage form input {
+    height: 50px;
+    width: 100%;
+    padding:0 .5rem;
+}
+
+.container-homePage form p{
+    margin-top: 1rem;
+    font-size: 14px;
+    color:red;
+}

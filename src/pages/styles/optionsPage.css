@@ -1,0 +1,45 @@
+.options-page{
+    min-height: 100vh;
+    background: rgb(236, 236, 236);
+}
+
+.options-page header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.options-page header h2 span{
+    color:red;
+}
+
+.container-optionsPage{
+    height: calc(70vh - 40px);
+    width: 80%;
+    max-width: 500px;
+    margin:auto;
+    border:3px solid black;
+    margin-top: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-optionsPage div{
+    display: grid;
+    gap:5rem;
+}
+
+.container-optionsPage h2{
+    text-align: center;
+    cursor: pointer;
+
+    transition: color 200ms, transform 200ms;
+}
+
+.container-optionsPage h2:hover{
+    color:red;
+    transform: scale(1.1);
+}

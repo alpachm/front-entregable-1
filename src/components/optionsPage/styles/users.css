@@ -1,0 +1,173 @@
+.users-page {
+    background: rgb(236, 236, 236);
+}
+
+.users-page header {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.users-page header i{
+    font-size: 3rem;
+    color:blue;
+    cursor: pointer;
+}
+
+.btn-create{
+    width: 200px;
+    background: rgb(7, 198, 7);
+}
+
+.container-usersPage{
+    height: calc(100vh - 100px);
+    width: 90%;
+    max-width: 1300px;
+    margin:auto;
+}
+
+.users-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:3rem;
+
+    margin-top: 3rem;
+}
+
+.user-card{
+    background:white;
+    padding: 1rem;
+
+    display: grid;
+    gap:1rem;
+}
+
+.user-card p span {
+    font-weight: bold;
+    color:blue;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap:.5rem;
+
+    margin-top: 1rem;
+}
+
+.buttons i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.buttons i:nth-child(2){
+    color:red;
+}
+
+.form-edit,
+.alertDeleteUser,
+.form-create{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -200%;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+
+    background-color: rgb(0 0 0 / .7);
+    backdrop-filter: blur(2px);
+
+    transition: left 300ms;
+}
+
+.show-formEdit{
+    left: 0;
+}
+
+.show-alertDelete{
+    left: 0;
+}
+
+.show-formCreate{
+    left: 0;
+}
+
+.form-edit> i,
+.form-create > i{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+
+    font-size: 3rem;
+    color:white;
+    background:red;
+    cursor: pointer;
+}
+
+.form-edit h3,
+.alertDeleteUser h3,
+.form-create h3{
+    text-align: center;
+    font-size: 2rem;
+    color:white;
+}
+
+.form-edit form,
+.form-create form{
+    display: grid;
+    width: 80%;
+    max-width: 500px;
+    gap:5px;
+}
+
+.form-edit form > p,
+.form-create form > p{
+    text-align: center;
+    margin-top: 10px;
+    color:white;
+    transform: scale(0);
+    transition: transform 200ms;
+}
+
+.form-edit form .showTextError{
+    transform: scale(1);
+}
+
+.form-create form .showTextError{
+    transform: scale(1);
+}
+
+.form-edit form input,
+.form-create form input{
+    height: 40px;
+    padding: 0 1rem;
+}
+
+.alertDeleteUser .buttons{
+display: flex;
+flex-direction: column;
+}
+
+.alertDeleteUser .buttons button{
+    width: 70%;
+    max-width: 500px;
+    margin:auto;
+}
+
+.alertDeleteUser .buttons button:nth-child(2){
+    background: red;
+}
+
+@media (min-width: 1100px){
+    .users-box{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
