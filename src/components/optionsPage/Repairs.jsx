@@ -8,7 +8,7 @@ const Repairs = () => {
   const navigate = useNavigate();
   const [isCreate, setIsCreate] = useState(false);
   const [isEdit, setIsEdit] = useState(false);
-  const [isDelete, setIsDelete] = useState(true);
+  const [isDelete, setIsDelete] = useState(false);
   const [repairs, setRepairs] = useState();
   const [idRepair, setIdRepair] = useState();
 
