@@ -1,5 +1,7 @@
 .users-page {
     background: rgb(236, 236, 236);
+    min-height: 100vh;
+    padding-bottom: 5rem;
 }
 
 .users-page header {
@@ -22,7 +24,7 @@
 }
 
 .container-usersPage{
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
     width: 90%;
     max-width: 1300px;
     margin:auto;
